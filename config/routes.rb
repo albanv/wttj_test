@@ -1,4 +1,18 @@
 Rails.application.routes.draw do
+  namespace :api do
+
+    # jobs
+    post '/jobs' => 'jobs#create'
+
+    get '/jobs/:id' => 'jobs#show'
+    put '/jobs/:id' => 'jobs#update'
+    delete '/jobs/:id' => 'jobs#remove'
+
+    # candidates
+    post '/candidates' => 'candidates#create'
+    get '/candidates/:id' => 'candidates#show'
+
+  end
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

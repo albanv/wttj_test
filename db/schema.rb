@@ -11,7 +11,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151206191636) do
+ActiveRecord::Schema.define(version: 20151206191749) do
+
+  create_table "candidates", force: :cascade do |t|
+    t.integer  "job_id"
+    t.string   "firstname"
+    t.string   "lastname"
+    t.string   "headline"
+    t.text     "coverletter"
+    t.string   "resume"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
+
+  add_index "candidates", ["job_id"], name: "index_candidates_on_job_id"
 
   create_table "jobs", force: :cascade do |t|
     t.string   "title"

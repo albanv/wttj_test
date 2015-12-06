@@ -1,4 +1,4 @@
-class CandidatesController < ApplicationController
+class Api::CandidatesController < ApplicationController
   def create
     Candidate.create!(params[:candidate])
   end

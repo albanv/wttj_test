@@ -74,6 +74,9 @@ GEM
     multi_json (1.11.2)
     nokogiri (1.6.7)
       mini_portile2 (~> 2.0.0.rc2)
+    oj (2.14.0)
+    rabl (0.11.6)
+      activesupport (>= 2.3.14)
     rack (1.6.4)
     rack-test (0.6.3)
       rack (>= 1.0)
@@ -167,6 +170,8 @@ DEPENDENCIES
   coffee-rails (~> 4.1.0)
   jbuilder (~> 2.0)
   jquery-rails
+  oj
+  rabl
   rails (= 4.2.5)
   rspec
   rspec-rails (~> 3.0)

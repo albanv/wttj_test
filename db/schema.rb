@@ -14,7 +14,7 @@
 ActiveRecord::Schema.define(version: 20151206191749) do
 
   create_table "candidates", force: :cascade do |t|
-    t.integer  "job_id"
+    t.integer  "job_id",      null: false
     t.string   "firstname"
     t.string   "lastname"
     t.string   "headline"

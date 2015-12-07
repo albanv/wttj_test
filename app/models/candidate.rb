@@ -1,5 +1,5 @@
 class Candidate < ActiveRecord::Base
-  belongs_to :job
+  belongs_to :job, required: true
 
   validates :firstname, presence: true
   validates :lastname, presence: true

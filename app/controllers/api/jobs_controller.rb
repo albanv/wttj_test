@@ -16,7 +16,8 @@ class Api::JobsController < ApplicationController
   end
 
   def remove
-    Job.find(params[:id]).destroy!
+    @job = Job.find(params[:id])
+    @job.destroy!
     render nothing: true
   end
 
